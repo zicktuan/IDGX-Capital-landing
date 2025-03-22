@@ -1,0 +1,167 @@
+body,
+html {
+  font-family: Sora, sans-serif;
+  font-style: normal;
+  background-color: var(--dark);
+  color: #fff;
+  scroll-behavior: smooth;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.full-height {
+  height: 100dvh;
+}
+:root {
+  --primary: #e6721f;
+  --secondary: #999;
+  --accent: #e4be9f;
+  --dark: #171717;
+  --dark-page: #010101;
+  --positive: #acacac;
+  --negative: #c10015;
+  --info: #f2f2f2;
+  --warning: #f2c037;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: #010101;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary);
+}
+main {
+  width: 100%;
+  min-height: 100dvh;
+}
+@media screen and (min-width: 250px) and (max-width: 576px) and (min-width: 250px) and (max-width: 576px) {
+  .wrapper {
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .wrapper .wrapper-body {
+    width: 100%;
+    max-width: min(86.6666666667vw, 325px);
+  }
+  footer,
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  footer h1.heading,
+  section h1.heading {
+    font-family: Orbitron;
+    font-size: min(8.5333333333vw, 32px);
+    font-weight: 700;
+    color: var(--primary);
+    text-shadow: 0.41px 0.41px 0.41px #000;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 991px) and (min-width: 577px) and (max-width: 991px) {
+  .wrapper {
+    width: 100%;
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .wrapper .wrapper-body {
+    width: 100%;
+    max-width: min(93.75vw, 720px);
+  }
+  footer,
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  footer h1.heading,
+  section h1.heading {
+    font-family: Orbitron;
+    font-size: min(4.1666666667vw, 32px);
+    font-weight: 700;
+    color: var(--primary);
+    text-shadow: 0.41px 0.41px 0.41px #000;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 4000px) and (min-width: 992px) and (max-width: 4000px) {
+  .wrapper {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .wrapper .wrapper-body {
+    width: 100%;
+    max-width: min(88.3333333333vw, 1696px);
+  }
+  footer,
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  footer h1.heading,
+  section h1.heading {
+    font-family: Orbitron;
+    font-size: min(3.3333333333vw, 64px);
+    font-weight: 700;
+    color: var(--primary);
+  }
+}
+@font-face {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/wp-content/themes/itsa-theme-master/assets/fonts/Sora-Regular.ttf);
+}
+@font-face {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 500;
+  src: url(/wp-content/themes/itsa-theme-master/assets/fonts/Sora-Medium.ttf);
+}
+@font-face {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 600;
+  src: url(/wp-content/themes/itsa-theme-master/assets/fonts/Sora-SemiBold.ttf);
+}
+@font-face {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 700;
+  src: url(/wp-content/themes/itsa-theme-master/assets/fonts/Sora-Bold.ttf);
+}
+@font-face {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 800;
+  src: url(/wp-content/themes/itsa-theme-master/assets/fonts/Sora-ExtraBold.ttf);
+}
