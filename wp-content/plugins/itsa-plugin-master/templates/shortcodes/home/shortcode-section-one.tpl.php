@@ -1,27 +1,33 @@
-<section id="poster" class="bg" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/images/poster.png'?>);">
+<section id="poster" class="bg" style="background-image: url(<?php echo !empty($atts['itsa_section_1_background']) ? wp_get_attachment_url($atts['itsa_section_1_background']) : '' ?>);">
     <div class="wrapper">
         <div class="wrapper-body">
             <div class="slogan">
-                <img src="<?php echo !empty($atts['itsa_section_1_img_slogan']) ? wp_get_attachment_url($atts['itsa_section_1_img_slogan']) : '' ?>" alt="">
+                <span style="font-size: 130px;">
+                    <?php echo !empty($atts['itsa_section_1_slogan']) ? $atts['itsa_section_1_slogan'] : '' ?>
+                </span> 
+                <!-- <img src="<?php echo !empty($atts['itsa_section_1_img_slogan']) ? wp_get_attachment_url($atts['itsa_section_1_img_slogan']) : '' ?>" alt=""> -->
             </div>
             <div class="container" style="width: 100%;">
                 <div class="banner">
                     <div class="host">
                         <div class="host-text"><?php echo !empty($atts['itsa_section_1_text_title']) ? $atts['itsa_section_1_text_title'] : '' ?></div>
-                        <?php if (!empty($atts['itsa_section_1_logo']) ) :?>    
-                        <img src="<?php echo wp_get_attachment_url($atts['itsa_section_1_logo']) ?>" alt="SSID Logo" class="ssid-logo">
-                        <?php endif ?>    
-                        <!-- <img src="https://pbs.twimg.com/media/GZ7F8-1bQAAq0tr?format=jpg&name=medium" alt="SSID Logo" class="ssid-logo"> -->
+                        <!-- <?php //if (!empty($atts['itsa_section_1_logo']) ) :?>    
+                        <img src="<?php //echo wp_get_attachment_url($atts['itsa_section_1_logo']) ?>" alt="SSID Logo" class="ssid-logo">
+                        <?php //endif ?>     -->
+                        <img src="https://pbs.twimg.com/media/GZ7F8-1bQAAq0tr?format=jpg&name=medium" alt="SSID Logo" class="ssid-logo">
                             <div class="host-last">
-                                <?php if (!empty($atts['itsa_section_1_title'])): ?>
+                            <?php if (!empty($atts['itsa_section_1_logo_2']) ) :?>    
+                                <img src="<?php echo wp_get_attachment_url($atts['itsa_section_1_logo_2']) ?>" alt="SSID Logo" class="ssid-logo">
+                            <?php endif ?>    
+                            <!-- <?php //if (!empty($atts['itsa_section_1_title'])): ?>
                                 <div class="back-button">
                                     <span class="back-arrow">&#10094;</span>
                                 </div>
-                                <?php endif ?>
+                                <?php //endif ?>
                                 <div>
-                                    <div class="kyros"><?php echo !empty($atts['itsa_section_1_title']) ? $atts['itsa_section_1_title'] : '' ?></div>
-                                    <div class="ventures"><?php echo !empty($atts['itsa_section_1_sub_title']) ? $atts['itsa_section_1_sub_title'] : '' ?></div>
-                                </div>
+                                    <div class="kyros"><?php //echo !empty($atts['itsa_section_1_title']) ? $atts['itsa_section_1_title'] : '' ?></div>
+                                    <div class="ventures"><?php //echo !empty($atts['itsa_section_1_sub_title']) ? $atts['itsa_section_1_sub_title'] : '' ?></div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="event-info">
@@ -37,6 +43,21 @@
     </div>
 </section>
 <style>
+    .slogan {
+            font-family: 'Playfair Display', serif;
+            color: #E8C6A1;
+            font-size: 60px;
+            font-weight: 700;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tech {
+            color: #E87324;
+        }
+        .pixel {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 50px;
+        }
     .banner {
             display: flex;
             align-items: center;
@@ -126,5 +147,31 @@
                 }
             }
             
+        }
+        @media (max-width: 768px) {
+            .blockstar {
+                font-size: 30px;
+            }
+            .vietnam {
+                font-size: 40px;
+            }
+            .pixel {
+                font-size: 30px;
+            }
+        }
+        @media (max-width: 480px) {
+            .slogan {
+                font-size: 40px;
+            }
+            
+            .blockstar {
+                font-size: 24px;
+            }
+            .vietnam {
+                font-size: 30px;
+            }
+            .pixel {
+                font-size: 24px;
+            }
         }
 </style>

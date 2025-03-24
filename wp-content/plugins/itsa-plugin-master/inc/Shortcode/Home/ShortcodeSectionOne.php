@@ -50,8 +50,13 @@
             $params = array(
                 array(
                     'type'       => 'attach_image',
-                    'param_name' => 'itsa_section_1_img_slogan',
-                    'heading'    => esc_html__('Ảnh slogan', 'bookawesome')
+                    'param_name' => 'itsa_section_1_background',
+                    'heading'    => esc_html__('Background', 'bookawesome')
+                ),
+                array(
+                    'type'       => 'textfield',
+                    'param_name' => 'itsa_section_1_slogan',
+                    'heading'    => esc_html__('Slogan', 'bookawesome')
                 ),
                 array(
                     'type'       => 'textfield',
@@ -61,17 +66,12 @@
                 array(
                     'type'       => 'attach_image',
                     'param_name' => 'itsa_section_1_logo',
-                    'heading'    => esc_html__('logo', 'bookawesome')
+                    'heading'    => esc_html__('Logo', 'bookawesome')
                 ),
                 array(
-                    'type'       => 'textfield',
-                    'param_name' => 'itsa_section_1_title',
-                    'heading'    => esc_html__('Title', 'bookawesome')
-                ),
-                array(
-                    'type'       => 'textfield',
-                    'param_name' => 'itsa_section_1_sub_title',
-                    'heading'    => esc_html__('Sub title', 'bookawesome')
+                    'type'       => 'attach_image',
+                    'param_name' => 'itsa_section_1_logo_2',
+                    'heading'    => esc_html__('Logo IDG', 'bookawesome')
                 ),
                 array(
                     'type'       => 'textfield',
