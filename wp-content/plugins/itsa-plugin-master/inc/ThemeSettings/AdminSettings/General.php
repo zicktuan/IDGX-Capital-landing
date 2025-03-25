@@ -135,6 +135,20 @@ class General extends SettingFactory
                 'section'     => 'general_setting',
             ],
             [
+                'id'          => 'awe_address_title',
+                'label'       => __( 'Tiêu đề', 'bookawesome' ),
+                'type'        => 'text',
+                'section'     => 'general_setting',
+                'desc'        => ' '
+            ],
+            [
+                'id'          => 'awe_address_desc',
+                'label'       => __( 'Mô tả', 'bookawesome' ),
+                'type'        => 'text',
+                'section'     => 'general_setting',
+                'desc'        => ' '
+            ],
+            [
                 'id'          => 'awe_address_ft',
                 'label'       => __( 'Địa chỉ', 'bookawesome' ),
                 'type'        => 'text',
