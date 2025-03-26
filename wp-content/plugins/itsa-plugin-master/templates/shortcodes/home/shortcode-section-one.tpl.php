@@ -2,7 +2,7 @@
     <div class="wrapper">
         <div class="wrapper-body">
             <div class="slogan">
-                <span style="font-size: 130px;">
+                <span>
                     <?php echo !empty($atts['itsa_section_1_slogan']) ? $atts['itsa_section_1_slogan'] : '' ?>
                 </span> 
                 <!-- <img src="<?php echo !empty($atts['itsa_section_1_img_slogan']) ? wp_get_attachment_url($atts['itsa_section_1_img_slogan']) : '' ?>" alt=""> -->
@@ -17,7 +17,7 @@
                         <img src="https://pbs.twimg.com/media/GZ7F8-1bQAAq0tr?format=jpg&name=medium" alt="SSID Logo" class="ssid-logo">
                             <div class="host-last">
                             <?php if (!empty($atts['itsa_section_1_logo_2']) ) :?>    
-                                <img src="<?php echo wp_get_attachment_url($atts['itsa_section_1_logo_2']) ?>" alt="SSID Logo" class="ssid-logo">
+                                <img src="<?php echo wp_get_attachment_url($atts['itsa_section_1_logo_2']) ?>" alt="SSID Logo" class="idg-logo">
                             <?php endif ?>    
                             <!-- <?php //if (!empty($atts['itsa_section_1_title'])): ?>
                                 <div class="back-button">
@@ -58,6 +58,9 @@
             font-family: 'Press Start 2P', cursive;
             font-size: 50px;
         }
+    .slogan span {
+        font-size: 130px;
+    }
     .banner {
             display: flex;
             align-items: center;
@@ -125,6 +128,10 @@
             font-size: 18px;
             text-align: center;
         }
+        .idg-logo {
+            height: 40px;
+            width: 65%;
+        }
         @media screen and (max-width: 768px){
             .banner {
                 flex-direction: column;
@@ -158,10 +165,44 @@
             .pixel {
                 font-size: 30px;
             }
+            .host {
+                margin-left: 13%;
+            }
+            .date {
+                font-size: 20px;
+                text-align: center;
+            }
+            .location {
+                font-size: 20px;
+                text-align: center;
+            }
+            .copyright {
+                display: none;
+            }
         }
         @media (max-width: 480px) {
-            .slogan {
-                font-size: 40px;
+            .copyright {
+                display: none;
+            }
+            .host {
+                display: flex;
+                align-items: center;
+                gap: 11px;
+                margin-left: 0;
+            }
+            .host-text{
+                font-size: 14px;
+            }
+            .ssid-logo{
+                height: 30px;
+                width: 100px;
+            }
+            .idg-logo {
+                height: 30px;
+                width: 95%;
+            }
+            .slogan span{
+                font-size: 75px;
             }
             
             .blockstar {
@@ -172,6 +213,19 @@
             }
             .pixel {
                 font-size: 24px;
+            }
+            .event-info {
+                flex-direction: column;
+                gap: 0px;
+                align-items: center;
+            }
+            .date {
+                font-size: 14px;
+                text-align: center;
+            }
+            .location {
+                font-size: 14px;
+                text-align: center;
             }
         }
 </style>
