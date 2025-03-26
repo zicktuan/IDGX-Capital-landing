@@ -6,7 +6,7 @@
                     <?php echo !empty($atts['itsa_section_1_slogan']) ? $atts['itsa_section_1_slogan'] : '' ?>
                 </span> 
                 <span class="sub-title">
-                Brighten up Vietnam with Blockchain
+                <?php echo !empty($atts['itsa_section_1_sub_slogan']) ? $atts['itsa_section_1_sub_slogan'] : '' ?>
                 </span>
                 <!-- <img src="<?php echo !empty($atts['itsa_section_1_img_slogan']) ? wp_get_attachment_url($atts['itsa_section_1_img_slogan']) : '' ?>" alt=""> -->
             </div>

@@ -60,6 +60,11 @@
                 ),
                 array(
                     'type'       => 'textfield',
+                    'param_name' => 'itsa_section_1_sub_slogan',
+                    'heading'    => esc_html__('Desc', 'bookawesome')
+                ),
+                array(
+                    'type'       => 'textfield',
                     'param_name' => 'itsa_section_1_text_title',
                     'heading'    => esc_html__('Text title', 'bookawesome')
                 ),
