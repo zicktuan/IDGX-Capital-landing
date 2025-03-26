@@ -34,6 +34,7 @@
                             </div>
                         </div>
                         <div class="event-info">
+                            <div class="demo-day"><?php echo !empty($atts['itsa_section_1_demo_day']) ? $atts['itsa_section_1_demo_day'] : '' ?></div>
                             <div class="date"><?php echo !empty($atts['itsa_section_1_time']) ? $atts['itsa_section_1_time'] : '' ?> <br>
                             <?php echo !empty($atts['itsa_section_1_year']) ? $atts['itsa_section_1_year'] : '' ?></div>
                             <div class="location"><?php echo !empty($atts['itsa_section_1_location']) ? $atts['itsa_section_1_location'] : '' ?>
@@ -131,6 +132,12 @@
             font-size: 18px;
             text-align: center;
         }
+        .demo-day {
+            font-size: 18px;
+            color: #D2B48C;
+            font-weight: 300;
+            text-decoration: none;
+        }
         .location {
             font-size: 18px;
             text-align: center;
@@ -154,7 +161,7 @@
             } */
             .event-info {
                 flex-direction: column;
-                gap: 10px;
+                gap: 3px;
                 align-items: center;
                 br{
                     display: none;
@@ -190,8 +197,14 @@
                 font-size: 40px;
                 text-align: center;
             }
+            .demo-day {
+                font-size: 20px;
+            }
         }
         @media (max-width: 480px) {
+            .demo-day {
+                font-size: 14px;
+            }
             .copyright {
                 display: none;
             }

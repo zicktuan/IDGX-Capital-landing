@@ -75,6 +75,11 @@
                 ),
                 array(
                     'type'       => 'textfield',
+                    'param_name' => 'itsa_section_1_demo_day',
+                    'heading'    => esc_html__('Demo Day', 'bookawesome')
+                ),
+                array(
+                    'type'       => 'textfield',
                     'param_name' => 'itsa_section_1_time',
                     'heading'    => esc_html__('Thời gian tổ chức', 'bookawesome')
                 ),
