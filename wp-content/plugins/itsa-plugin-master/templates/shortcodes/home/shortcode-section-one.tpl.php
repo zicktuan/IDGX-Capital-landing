@@ -2,9 +2,12 @@
     <div class="wrapper">
         <div class="wrapper-body">
             <div class="slogan">
-                <span>
+                <span class="title">
                     <?php echo !empty($atts['itsa_section_1_slogan']) ? $atts['itsa_section_1_slogan'] : '' ?>
                 </span> 
+                <span class="sub-title">
+                Brighten up Vietnam with Blockchain
+                </span>
                 <!-- <img src="<?php echo !empty($atts['itsa_section_1_img_slogan']) ? wp_get_attachment_url($atts['itsa_section_1_img_slogan']) : '' ?>" alt=""> -->
             </div>
             <div class="container" style="width: 100%;">
@@ -50,6 +53,7 @@
             font-weight: 700;
             flex-direction: column;
             align-items: center;
+            line-height: 75px;
         }
         .tech {
             color: #E87324;
@@ -58,8 +62,11 @@
             font-family: 'Press Start 2P', cursive;
             font-size: 50px;
         }
-    .slogan span {
+    .slogan .title {
         font-size: 130px;
+    }
+    .slogan .sub-title {
+        font-size: 45px;
     }
     .banner {
             display: flex;
@@ -130,7 +137,7 @@
         }
         .idg-logo {
             height: 40px;
-            width: 65%;
+            width: 100%;
         }
         @media screen and (max-width: 768px){
             .banner {
@@ -166,7 +173,7 @@
                 font-size: 30px;
             }
             .host {
-                margin-left: 13%;
+                margin-right: 2%;
             }
             .date {
                 font-size: 20px;
@@ -178,6 +185,10 @@
             }
             .copyright {
                 display: none;
+            }
+            .slogan .sub-title {
+                font-size: 40px;
+                text-align: center;
             }
         }
         @media (max-width: 480px) {
@@ -201,10 +212,15 @@
                 height: 30px;
                 width: 95%;
             }
-            .slogan span{
+            .slogan .title{
                 font-size: 75px;
+                line-height: 75px;
             }
-            
+            .slogan .sub-title {
+                font-size: 30px;
+                text-align: center;
+                line-height: 35px;
+            }
             .blockstar {
                 font-size: 24px;
             }
