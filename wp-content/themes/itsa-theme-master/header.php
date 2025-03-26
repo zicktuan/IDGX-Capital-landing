@@ -15,7 +15,7 @@
         <script src="<?php echo get_template_directory_uri() . '/assets/js/page-b66241399632c6f2.js'?>" async=""></script>
         <script src="<?php echo get_template_directory_uri() . '/assets/js/45-f679c4845e0a9467.js'?>" async=""></script>
         <script src="<?php echo get_template_directory_uri() . '/assets/js/layout-ee41cd6a4c177a01.js'?>" async=""></script>
-        <title><?php bloginfo('title')?></title>
+        <title><?php bloginfo('name'); ?></title>
         <!-- <link rel="icon" href="https://gmvietnam.io/icons/favicon-32x32.png" sizes="32x32">
         <link rel="icon" href="https://gmvietnam.io/icons//favicon-16x16.png" sizes="16x16">
         <link rel="apple-touch-icon" href="https://gmvietnam.io/icons/apple-touch-icon.png"> -->
