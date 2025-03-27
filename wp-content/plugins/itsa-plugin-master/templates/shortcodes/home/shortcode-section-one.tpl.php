@@ -2,13 +2,13 @@
     <div class="wrapper">
         <div class="wrapper-body">
             <div class="slogan">
-                <span class="title">
-                    <?php echo !empty($atts['itsa_section_1_slogan']) ? $atts['itsa_section_1_slogan'] : '' ?>
-                </span> 
+                <!-- <span class="title">
+                    <?php //echo !empty($atts['itsa_section_1_slogan']) ? $atts['itsa_section_1_slogan'] : '' ?>
+                </span>  -->
+                <img src="<?php echo !empty($atts['itsa_section_1_slogan']) ? wp_get_attachment_url($atts['itsa_section_1_slogan']) : '' ?>" alt="">
                 <span class="sub-title">
-                <?php echo !empty($atts['itsa_section_1_sub_slogan']) ? $atts['itsa_section_1_sub_slogan'] : '' ?>
+                    <?php echo !empty($atts['itsa_section_1_sub_slogan']) ? $atts['itsa_section_1_sub_slogan'] : '' ?>
                 </span>
-                <!-- <img src="<?php echo !empty($atts['itsa_section_1_img_slogan']) ? wp_get_attachment_url($atts['itsa_section_1_img_slogan']) : '' ?>" alt=""> -->
             </div>
             <div class="container" style="width: 100%;">
                 <div class="banner">
@@ -47,6 +47,15 @@
     </div>
 </section>
 <style>
+    body {
+        background: #060000;
+    }
+    main {
+        background: #060000;
+    }
+    footer {
+        background: #060000;
+    }
     .slogan {
             font-family: 'Playfair Display', serif;
             color: #E8C6A1;
@@ -68,6 +77,7 @@
     }
     .slogan .sub-title {
         font-size: 45px;
+        margin-top: -7%;
     }
     .banner {
             display: flex;

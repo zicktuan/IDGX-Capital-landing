@@ -54,9 +54,9 @@
                     'heading'    => esc_html__('Background', 'bookawesome')
                 ),
                 array(
-                    'type'       => 'textfield',
+                    'type'       => 'attach_image',
                     'param_name' => 'itsa_section_1_slogan',
-                    'heading'    => esc_html__('Slogan', 'bookawesome')
+                    'heading'    => esc_html__('Slogan image', 'bookawesome')
                 ),
                 array(
                     'type'       => 'textfield',
