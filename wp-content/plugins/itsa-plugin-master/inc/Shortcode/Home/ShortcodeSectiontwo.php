@@ -50,13 +50,33 @@
             $params = array(
                 array(
                     'type'       => 'textfield',
+                    'param_name' => 'itsa_section_2_text_button_1',
+                    'heading'    => esc_html__('Text button 1', 'bookawesome')
+                ),
+                array(
+                    'type'       => 'textfield',
                     'param_name' => 'itsa_section_2_url_contact_us',
                     'heading'    => esc_html__('Url Contact Us', 'bookawesome')
                 ),
                 array(
                     'type'       => 'textfield',
+                    'param_name' => 'itsa_section_2_text_button_2',
+                    'heading'    => esc_html__('Text button 2', 'bookawesome')
+                ),
+                array(
+                    'type'       => 'textfield',
                     'param_name' => 'itsa_section_2_url_register',
                     'heading'    => esc_html__('Url Register', 'bookawesome')
+                ),
+                array(
+                    'type'       => 'textfield',
+                    'param_name' => 'itsa_section_2_text_button_3',
+                    'heading'    => esc_html__('Text button 3', 'bookawesome')
+                ),
+                array(
+                    'type'       => 'textfield',
+                    'param_name' => 'itsa_section_2_url_button_3',
+                    'heading'    => esc_html__('Url let meet', 'bookawesome')
                 ),
                 array(
                     'type'       => 'textfield',

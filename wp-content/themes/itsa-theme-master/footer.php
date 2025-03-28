@@ -23,14 +23,6 @@ global $myplugin;
         <div class="newsletter">
             <p><?php echo !empty($optionTheme['awe_address_title']) ? $optionTheme['awe_address_title'] : '' ?></p>
             <p><?php echo !empty($optionTheme['awe_address_desc']) ? $optionTheme['awe_address_desc'] : '' ?></p>
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
-                    <rect x="0.515625" y="0.169922" width="1.40326" height="8.16923" fill="#ACACAC"></rect>
-                    <rect x="1.91797" y="8.33887" width="1.19171" height="6.91213" transform="rotate(-90 1.91797 8.33887)" fill="#ACACAC"></rect>
-                    <path d="M11.6973 7.74294L7.39974 10.2241L7.39974 5.26177L11.6973 7.74294Z" fill="#ACACAC"></path>
-                </svg>
-                SEND MAIL
-            </p>
         </div>
     </div>
 </footer>
