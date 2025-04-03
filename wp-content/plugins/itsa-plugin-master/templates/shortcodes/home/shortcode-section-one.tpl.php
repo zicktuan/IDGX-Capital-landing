@@ -233,7 +233,7 @@
             }
             .idg-logo {
                 height: 21px;
-                width: 95%;
+                width: 70px;
             }
             .slogan .title{
                 font-size: 75px;
