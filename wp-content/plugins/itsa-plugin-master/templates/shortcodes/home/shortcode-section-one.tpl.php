@@ -228,11 +228,11 @@
                 font-size: 14px;
             }
             .ssid-logo{
-                height: 30px;
-                width: 100px;
+                height: 37px;
+                width: 70px;
             }
             .idg-logo {
-                height: 30px;
+                height: 21px;
                 width: 95%;
             }
             .slogan .title{
